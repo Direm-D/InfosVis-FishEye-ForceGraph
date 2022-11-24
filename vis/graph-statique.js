@@ -25,7 +25,7 @@ var fisheye = d3.fisheye.circular()
 //     .style("stroke-width", 2)
 //     .style("fill", "none");
 
-d3.json("/TP/ressource/data copy 2.json", function (data) {
+d3.json("/TP/ressource/data-statique.json", function (data) {
     console.log(data)
     
     var lines = svg.selectAll("line")

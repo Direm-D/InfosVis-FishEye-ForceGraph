@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<TITLE>Encircling D3 Fisheye Distortion</TITLE>
+		<TITLE>Fisheye Graph</TITLE>
 		<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 		<script type="text/javascript" src="biblio/fisheye.js"></script>
 		<style>
@@ -108,7 +108,7 @@
 				.attr("height", height);
 			*/
 
-			d3.json("/TP/ressource/data.json", function(data) {
+			d3.json("/TP/ressource/data-fisheye.json", function(data) {
 				var n = data.nodes.length;
 
 				force.nodes(data.nodes).links(data.links);
